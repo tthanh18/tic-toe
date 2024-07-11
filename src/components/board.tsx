@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { Square } from "./square";
 import toast from "react-hot-toast";
 
-interface IBordProps {}
-
-export const Board = (props: IBordProps) => {
+export const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
   const [isNext, setIsNext] = useState(false);
 
